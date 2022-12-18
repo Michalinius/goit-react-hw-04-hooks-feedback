@@ -1,21 +1,20 @@
 import React from 'react';
 
-class Statistics extends React.Component {
+const Statistics = (props) => {
 
-    render() {
 
-        return (
-            <>
-                <div>
-                    <p>Good: {this.props.good}</p>
-                    <p>Neutral: {this.props.neutral}</p>
-                    <p>Bad: {this.props.bad}</p>
-                    <p>Total: {this.props.total} </p>
-                    <p>Positive feedback: {this.props.percentage.toFixed(2)} %</p>
-                </div>
-            </>
-        )
-    }
+    return (
+        <>
+            <div>
+                <p>Good: {props.good}</p>
+                <p>Neutral: {props.neutral}</p>
+                <p>Bad: {props.bad}</p>
+                <p>Total: {props.total} </p>
+                <p>Positive feedback: {props.percentage.toFixed(2)} %</p>
+            </div>
+        </>
+    )
 }
+
 
 export default Statistics;
